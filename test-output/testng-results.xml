@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-16T13:33:56 IST" name="Default suite" finished-at="2022-08-16T13:33:57 IST" duration-ms="114">
+    <groups>
+      <group name="Negative">
+        <method signature="TestNG.divNegative()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="divNegative" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.isNegative()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="isNegative" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.isPositive()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="isPositive" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.sqrt()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="sqrt" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.subtract(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="subtract" class="org.hometask.testng.TestNG"/>
+      </group> <!-- Negative -->
+      <group name="Positive">
+        <method signature="TestNG.addition(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="addition" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.divison(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="divison" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.multiplication(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="multiplication" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.pow()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="pow" class="org.hometask.testng.TestNG"/>
+        <method signature="TestNG.substraction(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" name="substraction" class="org.hometask.testng.TestNG"/>
+      </group> <!-- Positive -->
+    </groups>
+    <test started-at="2022-08-16T13:33:56 IST" name="Default test" finished-at="2022-08-16T13:33:57 IST" duration-ms="114">
+      <class name="org.hometask.testng.TestNG">
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="before" finished-at="2022-08-16T13:33:56 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="addition(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="addition" data-provider="InputData" finished-at="2022-08-16T13:33:56 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addition -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="after" finished-at="2022-08-16T13:33:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method signature="divNegative()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="divNegative" finished-at="2022-08-16T13:33:56 IST" duration-ms="2" status="PASS">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Attempt to divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Attempt to divide by zero
+at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+at org.hometask.testng.TestNG.divNegative(TestNG.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divNegative -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="before" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="after" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method signature="divison(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="divison" data-provider="InputData" finished-at="2022-08-16T13:33:56 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divison -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="before" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="after" finished-at="2022-08-16T13:33:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method signature="isNegative()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="isNegative" finished-at="2022-08-16T13:33:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isNegative -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="before" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="after" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method signature="isPositive()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="isPositive" finished-at="2022-08-16T13:33:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPositive -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="before" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="after" finished-at="2022-08-16T13:33:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="before" finished-at="2022-08-16T13:33:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="multiplication(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:56 IST" name="multiplication" data-provider="InputData" finished-at="2022-08-16T13:33:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplication -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="after" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="before" finished-at="2022-08-16T13:33:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="pow()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="pow" finished-at="2022-08-16T13:33:57 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pow -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="after" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="before" finished-at="2022-08-16T13:33:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="sqrt()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="sqrt" finished-at="2022-08-16T13:33:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sqrt -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="after" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method signature="substraction(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="substraction" data-provider="InputData" finished-at="2022-08-16T13:33:57 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substraction -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="before" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="after" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method signature="subtract(long,long)[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="subtract" data-provider="InputData" finished-at="2022-08-16T13:33:57 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtract -->
+        <test-method is-config="true" signature="before()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="before" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="after()[pri:0, instance:org.hometask.testng.TestNG@60bd273d]" started-at="2022-08-16T13:33:57 IST" name="after" finished-at="2022-08-16T13:33:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- org.hometask.testng.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

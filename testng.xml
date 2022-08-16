@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<groups>
-		<run>
-			<exclude name="NegativeTest"></exclude>
-		</run>
-	</groups>
-	<test thread-count="5" name="Parallel Tests" parallel="methods">
+	<test name=" Tests">
+		<groups>
+			<run>
+				<exclude name="Negative"></exclude>
+			</run>
+		</groups>
+
 		<classes>
 			<class name="org.hometask.testng.TestNG"></class>
 		</classes>

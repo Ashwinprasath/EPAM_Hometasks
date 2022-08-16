@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" shutdownHook="enable">
+<properties>
+        <property name="/HomeTask/Resource/" >${bundle:${sys:spring.profiles.active}:logging.path}</property>
+    </properties>
+    
+    <!-- ================================================================ -->
+	<!-- APPENDERS                                                        -->
+	<!-- ================================================================ -->
+	<appenders>
+		<File name="FileAppender" fileName="/HomeTask/Resource/testing.log">
+			<PatternLayout>
+				<pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5p] (%C.java:%L) - %m%n</pattern>
+			</PatternLayout>
+		</File>
+	</appenders>
+	<Loggers>
+		<!-- Add additional packages that you may not want to see. -->
+		<Logger name="org.hometask.corejava.Loggers" level="Debug" additivity="false">
+			<AppenderRef ref="FileAppender" />
+		</Logger>
+		<Root level="info" />
+	</Loggers>
+</Configuration>
