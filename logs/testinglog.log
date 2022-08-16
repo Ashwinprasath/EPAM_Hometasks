@@ -1,0 +1,10 @@
+21:22:11.843 [main] INFO  org.hometask.corejava.Loggers - Hello
+21:22:11.849 [main] DEBUG org.hometask.corejava.Loggers - Debug
+21:22:11.849 [main] WARN  org.hometask.corejava.Loggers - Warning
+21:22:11.849 [main] ERROR org.hometask.corejava.Loggers - Error occured while running
+21:36:16.960 [main] INFO  org.hometask.corejava.Loggers - Hello
+21:37:30.705 [main] INFO  org.hometask.corejava.Loggers - Hello
+21:37:30.710 [main] DEBUG org.hometask.corejava.Loggers - Debug
+21:37:30.711 [main] WARN  org.hometask.corejava.Loggers - Warning
+21:37:30.711 [main] ERROR org.hometask.corejava.Loggers - Error occured while running
+21:37:55.750 [main] INFO  org.hometask.corejava.Loggers - Hello

@@ -2,6 +2,7 @@ package org.hometask.corejava;
 
 import java.util.Scanner;
 
+
 public class Loops_03 {
 
 	int i, j, startsWith = 0;
@@ -16,6 +17,7 @@ public class Loops_03 {
 			}
 			System.out.println();
 		}
+		Loggers.log.info("Hello");
 	}
 
 	public void whileLoop() {
@@ -31,6 +33,7 @@ public class Loops_03 {
 			i++;
 			System.out.println();
 		}
+		Loggers.log.info("Hello");
 	}
 
 	public void doWhileLoop() {
@@ -47,6 +50,7 @@ public class Loops_03 {
 			System.out.println();
 			i--;
 		} while (i > 0);
+		Loggers.log.info("Hello");
 	}
 
 	@SuppressWarnings("resource")

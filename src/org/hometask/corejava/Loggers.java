@@ -5,14 +5,13 @@ import org.apache.logging.log4j.Logger;
 
 public class Loggers {
 
-	public static final Logger LOGGER = LogManager.getLogger(Loggers.class);
-	 public void loggersTest() {
-		 LOGGER.info("Hello");
-		 LOGGER.debug("Debug");
-		 LOGGER.warn("Warning");
-	 }
+	static Logger log = LogManager.getLogger(Loggers.class.getName());
+	
 	public static void main(String[] args) {
-		Loggers logs=new Loggers();
-		logs.loggersTest();
+		
+		log.info("Hello");
+		log.debug("Debug");
+		log.warn("Warning");
+		log.error("Error occured while running");
 	}
 }
