@@ -149,10 +149,10 @@ public class LambdaExpression {
 
 	public void treesetAlphabetReverseOrder() {
 		TreeSet<String> treeset = new TreeSet<>();
-		treeset.add("Kranthi");
-		treeset.add("Veer");
+		treeset.add("Ashwin");
+		treeset.add("Prasath");
 		treeset.add("EPAM");
-		treeset.add("Tummuri");
+		treeset.add("M");
 		treeset.add("Testing");
 		treeset.add("Automation");
 
@@ -167,8 +167,8 @@ public class LambdaExpression {
 		treemap.put("2", "to");
 		treemap.put("3", "Epam");
 		treemap.put("6", "Sytems");
-		treemap.put("5", "Kranthi");
-		treemap.put("4", "Veer");
+		treemap.put("5", "Ashwin");
+		treemap.put("4", "Prasath");
 
 		NavigableMap<String, String> nvagiateMap = treemap.descendingMap();
 		System.out.println("Tree Map sorting check in descending order " + nvagiateMap);
@@ -181,8 +181,8 @@ public class LambdaExpression {
 		treemap.put("Employee5", "to");
 		treemap.put("Employee3", "Epam");
 		treemap.put("Employee4", "Sytems");
-		treemap.put("Employee2", "Kranthi");
-		treemap.put("Employee6", "Veer");
+		treemap.put("Employee2", "Ashwin");
+		treemap.put("Employee6", "Prasath");
 
 		NavigableMap nvagiateMap = treemap.descendingMap();
 		System.out.println("Tree Map sorting check in descending order " + nvagiateMap);
